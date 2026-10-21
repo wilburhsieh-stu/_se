@@ -1,0 +1,15 @@
+# 隱藏資料庫檔案 (非常重要！)
+*.db
+*.sqlite3
+
+# 隱藏虛擬環境
+venv/
+env/
+
+# 隱藏 Python 暫存檔
+__pycache__/
+*.pyc
+
+# 隱藏作業系統產生的系統檔
+.DS_Store
+Thumbs.db
