@@ -1,0 +1,42 @@
+**`docker-compose.yml`** (Docker 核心編排檔)
+```yaml
+version: '3.8'
+
+services:
+  # 資料庫服務 (PostgreSQL)
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: microdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # 後端 API 服務 (Python Flask)
+  api:
+    build: ./api
+    environment:
+      - DB_HOST=db
+      - DB_USER=admin
+      - DB_PASS=secretpassword
+      - DB_NAME=microdb
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  # 前端與反向代理服務 (Nginx)
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  pgdata: # 定義資料庫持久化卷
