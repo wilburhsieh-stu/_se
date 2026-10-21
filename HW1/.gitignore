@@ -1,0 +1,11 @@
+# 虛擬環境
+venv/
+env/
+
+# Python 暫存檔
+__pycache__/
+*.pyc
+
+# 作業系統產生的系統檔
+.DS_Store
+Thumbs.db
