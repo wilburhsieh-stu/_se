@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker 微服務展示</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; max-width: 500px; width: 100%; }
+        h1 { color: #2496ed; /* Docker Blue */ }
+        button { background-color: #2496ed; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; margin-top: 20px; transition: 0.3s; }
+        button:hover { background-color: #1a7abf; }
+        #result { margin-top: 20px; padding: 15px; background: #eef2f5; border-radius: 5px; text-align: left; font-size: 14px; word-wrap: break-word; color: #333; display: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🐳 Docker 微服務系統</h1>
+        <p>前端 Nginx + 後端 Python Flask + 資料庫 PostgreSQL</p>
+        <button onclick="testApi()">測試 API 與資料庫連線</button>
+        <pre id="result"></pre>
+    </div>
+
+    <script>
+        async function testApi() {
+            const resultBox = document.getElementById('result');
+            resultBox.style.display = 'block';
+            resultBox.textContent = '連線中，請稍候...';
+
+            try {
+                // 透過 Nginx 反向代理呼叫後端 API
+                const response = await fetch('/api/status');
+                const data = await response.json();
+                resultBox.textContent = JSON.stringify(data, null, 4);
+            } catch (error) {
+                resultBox.textContent = '連線失敗：' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
