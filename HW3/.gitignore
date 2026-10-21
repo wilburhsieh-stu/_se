@@ -1,0 +1,11 @@
+# 忽略測試用或整理過程產生的資料夾
+Duplicates_Trash (重複檔案)/
+test_folder/
+
+# 隱藏 Python 暫存檔
+__pycache__/
+*.pyc
+
+# 隱藏作業系統產生的系統檔
+.DS_Store
+Thumbs.db
