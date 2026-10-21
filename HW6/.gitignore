@@ -1,0 +1,10 @@
+# 忽略資料庫儲存的實體檔案 (避免將本機資料庫推送到 GitHub)
+pgdata/
+
+# Python 暫存與虛擬環境
+__pycache__/
+*.pyc
+venv/
+
+# 系統隱藏檔
+.DS_Store
