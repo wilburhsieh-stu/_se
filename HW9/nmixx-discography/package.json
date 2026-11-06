@@ -1,0 +1,19 @@
+{
+  "name": "nmixx-discography",
+  "version": "1.0.0",
+  "description": "NMIXX 歷年作品集網站",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public --project-name nmixx-discography"
+  },
+  "keywords": [
+    "nmixx",
+    "cloudflare",
+    "pages"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

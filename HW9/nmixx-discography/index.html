@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NMIXX 歷年作品集 | Discography</title>
+  <style>
+    :root {
+      --primary-color: #5e548e; /* 取自天空的薰衣草紫 */
+      --accent-color: #ffffff;  /* 呼應水晶的高光 */
+      --text-color: #2b2b2b;
+      --card-bg: rgba(255, 255, 255, 0.55); /* 玻璃擬物化背景 */
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* 根據圖片色調設計的動態空靈漸層背景：紫、粉、藍、草地綠 */
+      background: linear-gradient(-45deg, #b9a0dc, #e8cce0, #a9c6e2, #94c9a9);
+      background-size: 300% 300%;
+      background-attachment: fixed;
+      animation: gradientBG 15s ease infinite;
+      color: var(--text-color);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background-color: rgba(153, 138, 198, 0.4);
+      backdrop-filter: blur(12px);
+      color: white;
+      text-align: center;
+      padding: 3.5rem 1rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 3px;
+      font-weight: 800;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      margin-top: 10px;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .year-section {
+      margin-bottom: 4rem;
+    }
+    .year-title {
+      font-size: 2.2rem;
+      color: #4a4073;
+      border-bottom: 2px solid rgba(255,255,255,0.8);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 4px rgba(255,255,255,0.6);
+    }
+    .album-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-left: 6px solid #a4b5d6;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .album-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(31, 38, 135, 0.15);
+    }
+    .album-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem 0;
+      color: var(--primary-color);
+    }
+    .album-date {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+    .tracklist {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .tracklist li {
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed rgba(0,0,0,0.1);
+      font-size: 1.05rem;
+    }
+    .tracklist li:last-child {
+      border-bottom: none;
+    }
+    .tracklist li::before {
+      content: '✦';
+      margin-right: 12px;
+      color: #7b8ebb;
+      font-size: 1em;
+    }
+    footer {
+      text-align: center;
+      padding: 2.5rem;
+      background-color: rgba(153, 138, 198, 0.4);
+      backdrop-filter: blur(10px);
+      color: white;
+      margin-top: 5rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NMIXX</h1>
+    <p>從出道至今的歷年專輯與歌曲列表 (2022 - 2026)</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- 2026 -->
+    <div class="year-section">
+      <h2 class="year-title">2026</h2>
+      
+      <div class="album-card">
+        <h3 class="album-title">Strange Muse</h3>
+        <div class="album-date">發行日期：2026-10-19</div>
+        <ul class="tracklist">
+          <li>Birthday Wish</li>
+          <li>Kerosene</li>
+          <li>RudE TaLK</li>
+          <li>Sing to the Moon</li>
+          <li>Hot 'n unbothered</li>
+          <li>WHIP</li>
+        </ul>
+      </div>
+
+      <div class="album-card">
+        <h3 class="album-title">Heavy Serenade</h3>
+        <div class="album-date">發行日期：2026-05-11</div>
+        <ul class="tracklist">
+          <li>Crescendo</li>
+          <li>Heavy Serenade</li>
+          <li>IDESERVEIT</li>
+          <li>Different Girl</li>
+          <li>Superior</li>
+          <li>LOUD</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2025 -->
+    <div class="year-section">
+      <h2 class="year-title">2025</h2>
+      
+      <div class="album-card">
+        <h3 class="album-title">Blue Valentine</h3>
+        <div class="album-date">發行日期：2025-10-13</div>
+        <ul class="tracklist">
+          <li>Blue Valentine</li>
+          <li>SPINNIN' ON IT</li>
+          <li>Phoenix</li>
+          <li>Reality Hurts</li>
+          <li>RICO</li>
+          <li>Game Face</li>
+          <li>PODIUM</li>
+          <li>Crush On You</li>
+          <li>ADORE U</li>
+          <li>Shape of Love</li>
+          <li>O.O Part 1 (Baila)</li>
+        </ul>
+      </div>
+
+      <div class="album-card">
+        <h3 class="album-title">Fe3O4: FORWARD</h3>
+        <div class="album-date">發行日期：2025-03-17</div>
+        <ul class="tracklist">
+          <li>High Horse</li>
+          <li>KNOW ABOUT ME</li>
+          <li>Slingshot</li>
+          <li>Golden Recipe</li>
+          <li>Papillon</li>
+          <li>Ocean</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="year-section">
+      <h2 class="year-title">2024</h2>
+      
+      <div class="album-card">
+        <h3 class="album-title">Fe3O4: STICK OUT</h3>
+        <div class="album-date">發行日期：2024-08-19</div>
+        <ul class="tracklist">
+          <li>별별별 (See that?)</li>
+          <li>SICKUHH (feat. Kid Milli)</li>
+          <li>Red light sign, but we go</li>
+          <li>BEAT BEAT</li>
+          <li>Moving On</li>
+          <li>Love Is Lonely</li>
+        </ul>
+      </div>
+
+      <div class="album-card">
+        <h3 class="album-title">Fe3O4: BREAK</h3>
+        <div class="album-date">發行日期：2024-01-15</div>
+        <ul class="tracklist">
+          <li>DASH</li>
+          <li>Soñar (Breaker)</li>
+          <li>Run For Roses</li>
+          <li>BOOM</li>
+          <li>Passionfruit</li>
+          <li>XOXO</li>
+          <li>Break The Wall</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div class="year-section">
+      <h2 class="year-title">2023</h2>
+      
+      <div class="album-card">
+        <h3 class="album-title">A Midsummer NMIXX's Dream</h3>
+        <div class="album-date">發行日期：2023-07-11</div>
+        <ul class="tracklist">
+          <li>Party O'Clock</li>
+          <li>Roller Coaster</li>
+        </ul>
+      </div>
+
+      <div class="album-card">
+        <h3 class="album-title">expérgo</h3>
+        <div class="album-date">發行日期：2023-03-20</div>
+        <ul class="tracklist">
+          <li>Young, Dumb, Stupid</li>
+          <li>Love Me Like This</li>
+          <li>PAXXWORD</li>
+          <li>Just Did It</li>
+          <li>My Gosh</li>
+          <li>HOME</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2022 -->
+    <div class="year-section">
+      <h2 class="year-title">2022</h2>
+      
+      <div class="album-card">
+        <h3 class="album-title">1st Intermixxion Single</h3>
+        <div class="album-date">發行日期：2022-11-23</div>
+        <ul class="tracklist">
+          <li>Funky Glitter Christmas</li>
+        </ul>
+      </div>
+
+      <div class="album-card">
+        <h3 class="album-title">ENTWURF</h3>
+        <div class="album-date">發行日期：2022-09-19</div>
+        <ul class="tracklist">
+          <li>DICE</li>
+          <li>COOL (Your rainbow)</li>
+        </ul>
+      </div>
+
+      <div class="album-card">
+        <h3 class="album-title">AD MARE</h3>
+        <div class="album-date">發行日期：2022-02-22</div>
+        <ul class="tracklist">
+          <li>O.O</li>
+          <li>TANK</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Deployed on Cloudflare Pages ✦</p>
+  </footer>
+
+</body>
+</html>
