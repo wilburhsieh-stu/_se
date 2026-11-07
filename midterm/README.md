@@ -3,9 +3,9 @@
 1     1     |   curl  |   是 |   | [01](https://github.com/wilburhsieh-stu/_se/tree/main/HW1)
 2     2     |  校務系統  |   是 |   | [02](https://github.com/wilburhsieh-stu/_se/tree/main/HW2)
 3     3     |   有價值專案  |   是 |   | [03](https://github.com/wilburhsieh-stu/_se/tree/main/HW3)
-4     4     |  git flow | 否 |    是  |   | 
+4     4     |  git flow | 否 |    是  |   | [03](https://github.com/wilburhsieh-stu/_se/tree/main/HW3)
 5     5     |  (放假) |  |  |   | 
-6     6     |  docker | 否 | 是 |   | 
-7     7     |  網站測試 | 否 | 是 |   | 
+6     6     |  docker | 否 | 是 |   | [03](https://github.com/wilburhsieh-stu/_se/tree/main/HW3)
+7     7     |  網站測試 | 否 | 是 |   | [03](https://github.com/wilburhsieh-stu/_se/tree/main/HW3)
 8     8     |  有價值專案 | 否 |   |  |
-9     9     |  cloudflare 網站專案 | 否 |  是 |   | 
+9     9     |  cloudflare 網站專案 | 否 |  是 |   | [03](https://github.com/wilburhsieh-stu/_se/tree/main/HW3)
